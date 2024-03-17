@@ -25,8 +25,8 @@ SECRET_KEY = "django-insecure-8@g8p32t8pdf#4xn%3=i*=x5c$3hwl*!7so4_wioin9z4c(+wl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".awsapprunner.com"]
-
+# ALLOWED_HOSTS = [".awsapprunner.com"]
+ALLOWED_HOSTS = ['*', ]
 
 # Application definition
 
@@ -47,7 +47,6 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
